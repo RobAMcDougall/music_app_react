@@ -9,6 +9,12 @@ body {
     font-family: "Jost", sans-serif;
 }
 
+body,
+button {
+    font-family: "Jost", sans-serif;
+}
+
+
 
 .App {
     margin-top: 2rem;
@@ -44,8 +50,14 @@ body {
     text-align: center;
 }
 
-.SongList h3 {
+.SongList .heading-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
+.SongList h3 {
+    display: inline-block;
     color: #FFA500;
 }
 
@@ -59,6 +71,20 @@ body {
 }
 
 .SongList span.release-date {
+    display: block;
     font-style: italic;
     color: #A52A2A;
+}
+
+.LikeButton {
+    background-color: lightGrey;
+    color: black;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+}
+
+.LikeButton.liked {
+    background-color: gold;
+    color: white;
 }

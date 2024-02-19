@@ -6,7 +6,7 @@ import Songlist from "./components/Songlist.jsx";
 
 export default function App() {
     return (
-        <div class="App">
+        <div className="App">
             <Intro />
             <Songlist/>
         </div>
