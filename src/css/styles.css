@@ -26,3 +26,39 @@ body {
 .Intro {
     color: #800000;
 }
+
+.SongList ul {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.SongList li {
+    list-style-type: none;
+}
+
+.SongList h2 {
+    color: #FFD700;
+    text-align: center;
+}
+
+.SongList h3 {
+
+    color: #FFA500;
+}
+
+
+.SongList .image-container {
+    max-width: 12rem;
+}
+
+.SongList .image-container img {
+    width: 100%;
+}
+
+.SongList span.release-date {
+    font-style: italic;
+    color: #A52A2A;
+}
