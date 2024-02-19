@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: ghostWhite;
+    background: linear-gradient(to bottom, ghostWhite, #fff1b3);
+    font-family: "Jost", sans-serif;
+}
+
+
+.App {
+    margin-top: 2rem;
+    max-width: 800px;
+}
+
+.Intro h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic;
+    color: #800000;
+    color: #FFA500;
+}
+
+.Intro {
+    color: #800000;
+}
