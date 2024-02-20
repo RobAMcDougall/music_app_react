@@ -1,17 +1,17 @@
 import React from "react"
 import { useState } from 'react'
 
-export default function LikeButton() {
+export default function LikeButton({setFavourites, favourites, albumName}) {
 
     const [liked, updateLiked] = useState(false)
 
     const handleLikeButton = () => {
 
         updateLiked(prevState => !prevState)
+        
+        setFavourites([...favourites, albumName])
 
-        // function anonymousFunction(prevState) {
-        //     return !prevState
-        // }
+        // setToDos([...toDos, { text: inputText, completed: false }])
 
     }
 

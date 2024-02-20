@@ -1,7 +1,9 @@
-export default function FavList(favourites) {
+import React from 'react'
+
+export default function FavList({ favourites }) { // destructuring assignment 
     return (
-        <div className>
-            {favourites.map(favourite => <li>{favourite}</li>)}
-        </div>
+        <ul className>
+            {favourites.map(favourite => <li>{favourite}</li>)}  
+        </ul>
     )
 }
