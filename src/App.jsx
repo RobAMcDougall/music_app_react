@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { Routes, Route } from 'react-router-dom'
+import {Home} from './pages'
 
 
 import { Intro, Songlist, FavList } from "./components";
@@ -27,7 +28,7 @@ export default function App() {
     return (
         <div className="App">
             <Routes>
-                {/* <Route path='/' element={<Home />} /> */}
+                <Route path='/' element={<Home />} />
                 <Route path='about' element={<Intro />} />
 
                 <Route path='albums' element={<Songlist setFavourites={setFavourites} favourites={favourites} />} />
